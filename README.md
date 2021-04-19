@@ -5,6 +5,18 @@ Proyecto parte del curso de Fernando Herrera https://www.udemy.com/course/react-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+## Recursos
+
+Snippet para login
+```
+https://bootsnipp.com/snippets/7nk08
+```
+
+React Router DOM
+```
+https://reactrouter.com/web/guides/quick-start
+npm install react-router-dom
+```
 
 ## Available Scripts
 
