@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Heroes APP (React JS)
+
+Proyecto parte del curso de Fernando Herrera https://www.udemy.com/course/react-cero-experto
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
