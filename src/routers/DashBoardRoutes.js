@@ -13,7 +13,7 @@ export const DashBoardRoutes = () => {
     return (
         <>
             <NavBar/>
-            <div>
+            <div class="container">
                 <Switch>
                     <Route exact path="/marvel" component={MarvelScreen}/>
                     <Route exact path="/hero/:heroeId" component={HeroScreen}/>

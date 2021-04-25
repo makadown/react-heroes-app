@@ -33,11 +33,11 @@ export const HeroScreen = ({history}) => {
         <img
           src={`../assets/heroes/${heroeId}.jpg`}
           alt={superhero}
-          className="img-thumbnail"
+          className="img-thumbnail animate__animated animate__fadeInLeft"
         />
       </div>
-      <div className="col-7 ml-3">
-        <h3>{superhero}</h3>
+      <div className="col-7 ml-3 text-white bg-dark">
+        <h3 class="mt-5">{superhero}</h3>
         <ul className="list-group list-group-flush text-white bg-dark rounded-lg">
           <li className="list-group-item text-white bg-dark">
             <b>Alter ego: </b>
