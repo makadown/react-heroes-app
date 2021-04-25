@@ -25,7 +25,7 @@ export const HeroCard = ({ props }) => {
                 <small className="text-muted"> {props.first_appearance}</small>
             </p>
             <Link to={ `./hero/${props.id}` } className="btn btn-info">
-                Más...
+                More . . . 
             </Link>
           </div>
         </div>

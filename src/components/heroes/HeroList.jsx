@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { getHeroesByPublisher } from '../../selectors/getHeroesByPublisher'
 import { HeroCard } from './HeroCard';
 
 export const HeroList = ({publisher}) => {
-    const heroes = getHeroesByPublisher(publisher);
+    // usa useMemo para que no reinvoque el metodo a menos que cambie
+    // el publisher
+    const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
     return (
         <div className="card-columns">
             {
