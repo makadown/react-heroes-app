@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { AuthContext } from '../../auth/AuthContext';
+import { Types } from '../../types/types';
 
 export const LoginScreen = ({ history }) => {
+  
+  const {dispatch} = useContext(AuthContext);
+
   const { register, handleSubmit } = useForm();
+
   const onSubmit = (data) => {
     //  alert(JSON.stringify(data));
     if ( !(data.username === 'test' && data.password === 'test')) {
@@ -10,6 +16,10 @@ export const LoginScreen = ({ history }) => {
         'Credenciales incorrectas. Capture "test"/"test" para este demo =)'
       );
     } else {
+      dispatch( {
+        type: Types.login,
+        payload: {name: data.username}
+      } );
       history.replace('/');
     }
   };
