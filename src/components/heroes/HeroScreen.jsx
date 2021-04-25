@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Redirect, useParams } from 'react-router';
 import { getHeroById } from '../../selectors/getHeroById';
 
-export const HeroScreen = ({history}) => {
+export const HeroScreen = ({ history }) => {
   // extraigo los parametros del url
   const { heroeId } = useParams();
 
@@ -10,16 +10,18 @@ export const HeroScreen = ({history}) => {
   // es para que cada que cargue componente jale 1 vez del metodo get
   // y las demas veces del memo, jasta que haya cambiado de id de heroe!
   const hero = useMemo(() => getHeroById(heroeId), [heroeId]);
-  
+
   if (!hero) {
     return <Redirect to="/" />;
   }
   const handleReturn = () => {
-    const page = publisher.toLowerCase().replace(' comics', '');
-    history.replace('/'+page);
+    if (history.length <= 2) {
+      history.push('/');
+    } else {
+      history.goBack();
+    }
   };
   const {
-    id,
     superhero,
     publisher,
     alter_ego,
@@ -37,7 +39,7 @@ export const HeroScreen = ({history}) => {
         />
       </div>
       <div className="col-7 ml-3 text-white bg-dark">
-        <h3 class="mt-5">{superhero}</h3>
+        <h3 className="mt-5">{superhero}</h3>
         <ul className="list-group list-group-flush text-white bg-dark rounded-lg">
           <li className="list-group-item text-white bg-dark">
             <b>Alter ego: </b>
@@ -58,9 +60,9 @@ export const HeroScreen = ({history}) => {
         </ul>
         <h5 className="mt-2"> Characters </h5>
         <p>{characters}</p>
-        <button className="btn btn-outline-info mb-3"
-              onClick={handleReturn}>
-                Return</button>
+        <button className="btn btn-outline-info mb-3" onClick={handleReturn}>
+          Return
+        </button>
       </div>
     </div>
   );

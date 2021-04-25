@@ -18,6 +18,11 @@ https://reactrouter.com/web/guides/quick-start
 npm install react-router-dom
 ```
 
+Query String. Usado porque el pinchi React cagado no tiene de cajón algo para manejarlo.
+```
+https://www.npmjs.com/package/query-string
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
