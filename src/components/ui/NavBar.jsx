@@ -12,10 +12,10 @@ export const NavBar = () => {
   const history = useHistory();
 
   const handleLogout = () => {
-    history.replace('/login');
     dispatch({
       type: Types.logout,
     });
+    history.replace('/login');
   };
 
   return (
