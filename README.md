@@ -23,6 +23,17 @@ Query String. Usado porque el pinchi React cagado no tiene de cajón algo para m
 https://www.npmjs.com/package/query-string
 ```
 
+Enzyme para react 17
+```
+https://www.npmjs.com/package/@wojtekmaj/enzyme-adapter-react-17
+```
+
+Enzyme to json
+```
+https://github.com/adriantoine/enzyme-to-json
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
