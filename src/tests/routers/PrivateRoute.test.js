@@ -10,6 +10,8 @@ describe('Pruebas en <PrivateRoute/>', () => {
         }
     };
 
+    Storage.prototype.setItem = jest.fn();
+
     test('debe de mostrar el componente si está autenticado y guardar localstorage', () => {
         // OJO: En estos high order components como private route, se debe usar
         // mount en lugar de shallow
@@ -22,6 +24,7 @@ describe('Pruebas en <PrivateRoute/>', () => {
                 />
             </MemoryRouter>);
         expect(wrapper.find('span').exists()).toBeTruthy();
+        expect(localStorage.setItem).toHaveBeenCalledWith('lastPath', '/marvel');
     })
 
 });
