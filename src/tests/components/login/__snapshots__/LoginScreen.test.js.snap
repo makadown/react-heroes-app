@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de <LoginScreen/> debe de realizar dispatch y navegacion 1`] = `
+Array [
+  <div
+    className="sidenav animate__animated animate__fadeInLeft"
+  >
+    <div
+      className="bg"
+    />
+    <div
+      className="login-main-text"
+    >
+      <h2>
+         Heroes App 
+      </h2>
+      <p>
+        Introduce your credentials.
+      </p>
+    </div>
+  </div>,
+  <div
+    className="main animate__animated animate__fadeInRight"
+  >
+    <div
+      className="col-md-6 col-sm-12"
+    >
+      <div
+        className="login-form"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group"
+          >
+            <label>
+              User Name
+            </label>
+            <input
+              className="form-control"
+              name="username"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="User Name"
+              type="text"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label>
+              Password
+            </label>
+            <input
+              className="form-control"
+              name="password"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <button
+            className="btn btn-secondary"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas de <LoginScreen/> debe de verse 1`] = `
+Array [
+  <div
+    className="sidenav animate__animated animate__fadeInLeft"
+  >
+    <div
+      className="bg"
+    />
+    <div
+      className="login-main-text"
+    >
+      <h2>
+         Heroes App 
+      </h2>
+      <p>
+        Introduce your credentials.
+      </p>
+    </div>
+  </div>,
+  <div
+    className="main animate__animated animate__fadeInRight"
+  >
+    <div
+      className="col-md-6 col-sm-12"
+    >
+      <div
+        className="login-form"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group"
+          >
+            <label>
+              User Name
+            </label>
+            <input
+              className="form-control"
+              name="username"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="User Name"
+              type="text"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label>
+              Password
+            </label>
+            <input
+              className="form-control"
+              name="password"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <button
+            className="btn btn-secondary"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+]
+`;
