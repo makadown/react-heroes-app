@@ -27,20 +27,21 @@ describe('Pruebas de <LoginScreen/>', () => {
         }
     };
 
-    const data = {
-        username: 'test',
-        password: 'test'
-    }
+    /* const data = {
+         username: 'test',
+         password: 'test'
+     }*/
 
-   const useForm = {
+    const useForm = {
         dispatch: jest.fn(),
+        handleSubmit: jest.fn(),
         user: {
             logged: false
         }
     };
 
     test('debe de verse', () => {
-    
+
         const wrapper = mount(
             <AuthContext.Provider value={contextValue}>
                 <MemoryRouter>
@@ -51,10 +52,10 @@ describe('Pruebas de <LoginScreen/>', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    // Este no jala porque hice el jsx justo como en el curso jijiji
-    /*
+    // Este no jala porque NO hice el jsx justo como en el curso jijiji
+/*
     test('debe de realizar dispatch y navegacion', () => {
-    
+
         const wrapper = mount(
             <AuthContext.Provider value={contextValue}>
                 <MemoryRouter>
@@ -62,10 +63,15 @@ describe('Pruebas de <LoginScreen/>', () => {
                 </MemoryRouter>
             </AuthContext.Provider>
         );
-        
+
         expect(wrapper).toMatchSnapshot();
-        wrapper.find('button').simulate('click', {data}); 
-        expect(useForm.dispatch).toHaveBeenCalled();
-    }); */
+        wrapper.find('button').simulate('click', {
+            data: {
+                username: 'test',
+                password: 'test'
+            }
+        });
+        expect(useForm.handleSubmit).toHaveBeenCalled();
+    });*/
 
 });
