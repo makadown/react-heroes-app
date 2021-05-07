@@ -5,6 +5,8 @@ Proyecto parte del curso de Fernando Herrera https://www.udemy.com/course/react-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+Publicado en https://makadown.github.io/react-heroes-app/  (en contruccion)
+
 ## Recursos
 
 Snippet para login
