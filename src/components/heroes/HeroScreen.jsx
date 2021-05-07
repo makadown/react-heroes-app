@@ -2,6 +2,10 @@ import React, { useMemo } from 'react';
 import { Redirect, useParams } from 'react-router';
 import { getHeroById } from '../../selectors/getHeroById';
 
+// import batman from '../../assets/heroes/dc-batman.jpg'; // estático
+// const heroImages = require.context('../../assets/heroes', true);
+import { heroImages } from '../../helpers/heroImages';
+
 export const HeroScreen = ({ history }) => {
   // extraigo los parametros del url
   const { heroeId } = useParams();
@@ -33,7 +37,9 @@ export const HeroScreen = ({ history }) => {
     <div className="row mt-2 ml-2 mb-3">
       <div className="col-4">
         <img
-          src={`../assets/heroes/${heroeId}.jpg`}
+         // src={`../assets/heroes/${heroeId}.jpg`} // desde public/assets
+         // src={batman} // import estatico
+          src={ heroImages(`./${heroeId}.jpg`).default }
           alt={superhero}
           className="img-thumbnail animate__animated animate__fadeInLeft"
         />

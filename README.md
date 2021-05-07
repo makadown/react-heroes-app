@@ -33,6 +33,10 @@ Enzyme to json
 https://github.com/adriantoine/enzyme-to-json
 ```
 
+Documentacion require.context
+```
+https://webpack.js.org/guides/dependency-management/#requirecontext
+```
 
 ## Available Scripts
 
