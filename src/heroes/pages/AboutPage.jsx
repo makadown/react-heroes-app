@@ -2,16 +2,16 @@ import React from 'react'
 
 export const AboutPage = () => {
   return (
-    <section className="header03 cid-rVmJmn8KSM mt-5 p-5" id="header03-2k">   
+    <section className="header03 cid-rVmJmn8KSM mt-1 p-5" id="header03-2k">   
 
     <div className="mbr-overlay" style={{opacity: 0.5, backgroundColor: '#000000'}}></div>
 
     <div className="container align-left">
         <div className="row justify-content-left">
             <div className="mbr-white col-md-12 col-lg-6">
-                <h1 className="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-6 ">ABOUT</h1>
+                <h1 className="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-6">ABOUT</h1>
                 <p className="mbr-section-subtitle mbr-light mbr-fonts-style">
-                  Proyecto hecho en React 18 (powered by Vite). Conceptos aplicados:
+                  Proyecto hecho en React 18 (powered by Vite). Conceptos aplicados:</p>
                      <ul className='mt-2'>
                          <li>React Router</li>
                          <li>Navigate</li>
@@ -28,9 +28,9 @@ export const AboutPage = () => {
                           target='_blank'> 
                         curso del Maestro Fernando Herrera 
                         </a>.
-                  </p>
+                  
                   <p className="mbr-section-subtitle mbr-light mbr-fonts-style">
-                  Excelente!
+                  Alumno: Mario Arturo Serrano Flores.
                   </p>
                 
                 <div className="mbr-section-btn">
