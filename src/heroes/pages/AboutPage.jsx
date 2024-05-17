@@ -11,7 +11,7 @@ export const AboutPage = () => {
             <div className="mbr-white col-md-12 col-lg-6">
                 <h1 className="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-6">ABOUT</h1>
                 <p className="mbr-section-subtitle mbr-light mbr-fonts-style">
-                  Proyecto hecho en React 18 (powered by Vite). Conceptos aplicados:</p>
+                  Proyecto hecho en React 18 (powered by Vite). Conceptos practicados:</p>
                      <ul className='mt-2'>
                          <li>React Router</li>
                          <li>Navigate</li>

@@ -1,20 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import {getHeroesByPublisher} from '../helpers';
-import { useState, useEffect } from 'react';
 import { HeroCard } from './HeroCard';
 
 export const HeroList = ({publisher}) => {
 
-  const [heroesList, setheroesList] = useState([]);
-
-  useEffect(() => {
-    const jijiList = getHeroesByPublisher(publisher);
-    setheroesList(jijiList);
-    return () => {
-        // unmount 
-    }
-  }, [publisher])
-  
+  const heroesList = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
 
   return (
     <>
