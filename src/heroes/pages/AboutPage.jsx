@@ -17,8 +17,8 @@ export const AboutPage = () => {
                          <li>Navigate</li>
                          <li>useMemo</li>
                          <li>animaciones</li>
-                         <li>protección de rutas</li>
                          <li>login</li>
+                         <li>protección de rutas</li>
                          <li>Context</li>
                          <li>Reducer</li>
                      </ul>
@@ -30,7 +30,7 @@ export const AboutPage = () => {
                         </a>.
                   
                   <p className="mbr-section-subtitle mbr-light mbr-fonts-style">
-                  Alumno: Mario Arturo Serrano Flores.
+                  { '© ' } { new Date().getFullYear() }. Mario Arturo Serrano Flores.
                   </p>
                 
                 <div className="mbr-section-btn">
