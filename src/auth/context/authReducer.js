@@ -1,7 +1,9 @@
 import { types } from '../types/types';
 
 /**
- * Reducer de autenticación utilizado por AuthProvider.jsx
+ * Reducer de autenticación utilizado por AuthProvider.jsx.
+ * NOTA: JAMAS llamar funciones externas fuera del reducer.
+ *          ni siquiera llamar el console.log.
  * @param {*} state 
  * @param {*} action 
  * @returns 

@@ -8,7 +8,7 @@ export const HeroCard = ({ id, superhero, alter_ego, first_appearance, character
             <div className="card ms-3 animate__animated animate__fadeIn text-white bg-dark">
                 <div className="row no-gutters">
                     <div className="col-md-4">
-                        <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
+                        <img src={`/heroes/${id}.jpg`} className="card-img" alt={superhero} />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
@@ -21,7 +21,7 @@ export const HeroCard = ({ id, superhero, alter_ego, first_appearance, character
                                 <small className="text-muted"> {first_appearance}</small>
                             </p>
                             <Link to={`/hero/${id}`} className="btn btn-outline-info">
-                                Mas...
+                                More...
                             </Link>
                         </div>
                     </div>
