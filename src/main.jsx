@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles.css'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { HeroesApp } from './HeroesApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode> 
-      <BrowserRouter>
+   <React.StrictMode> 
+      {/* <BrowserRouter> */}
+      <HashRouter>
         <HeroesApp/>
-      </BrowserRouter>
-  // </React.StrictMode>,
+      </HashRouter>
+      {/* </BrowserRouter> */}
+   </React.StrictMode>,
 )

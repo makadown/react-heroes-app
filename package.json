@@ -1,5 +1,6 @@
 {
   "name": "react-heroes-app",
+  "homepage": "https://makadown.github.io/react-heroes-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

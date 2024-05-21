@@ -26,11 +26,11 @@ export const LoginPage = () => {
 
   const onSubmit = (data) => {
     //  alert(JSON.stringify(data));
-    if (!(data.username === 'test' && data.password === 'test')) {
+    if (!(data.username === 'test' && data.password === 'test_T3st!!')) {
       MySwal.fire({
         title: 'Incorrect credentials',
         text:
-          `Type "test"/"test" for this demo =)`,
+          `Type "test"/"test_T3st!!" for this demo =)`,
         icon: 'error',
         confirmButtonText: 'Ok!',
       });
