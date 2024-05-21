@@ -1,4 +1,5 @@
 # Heroes APP (React JS)
+![alt text](image.png)
 
 Proyecto parte del curso de Fernando Herrera https://www.udemy.com/course/react-cero-experto
 
