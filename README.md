@@ -16,7 +16,9 @@ Conceptos practicados en este proyecto:
 - Context
 - Reducer
  
-
+ Levantado en https://makadown.github.io/react-heroes-app/
+ 
+ 
 ## Recursos
  
 React Router 6.4.4
