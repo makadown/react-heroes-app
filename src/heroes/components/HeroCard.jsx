@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 export const HeroCard = ({ id, superhero, alter_ego, first_appearance, characters }) => {
     
     return (
-        <div className='col'>
+        <div aria-label="hero-card" className='col'>
             <div className="card ms-3 animate__animated animate__fadeIn text-white bg-dark">
                 <div className="row no-gutters">
                     <div className="col-md-4">
